@@ -16,6 +16,8 @@ const createFareMultiplier = fareMultiplier => function(fareQuintupler){
 const fareDoubler = createFareMultiplier(2);
 const fareTripler = createFareMultiplier(3);
 
+// functions that take array parameter(drivers) are only returnFirstTwoDrivers or returnLastTwoDrivers.
+// Whatever that name of the call back function indicates one of those functions.
 const selectDifferentDrivers = (drivers, driverFunc) => {
     return driverFunc(drivers);
 }
